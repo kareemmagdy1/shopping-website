@@ -1,0 +1,23 @@
+//- W3hubs.com - Download Free Responsive Website Layout Templates designed on HTML5 CSS3,Bootstrap,Tailwind CSS which are 100% Mobile friendly. w3Hubs all Layouts are responsive cross browser supported, best quality world class designs.
+doctype html
+html(lang="en")
+  head
+    title Login Form In Pug
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    #main
+     form(action="/signup" ,method="post" )
+       div.label create an account
+       div.username
+        input(type="text" placeholder="username" name="username" )
+       div.password
+        input(type="password" placeholder="password" name="password")
+
+       //button(type="button" , value="submit") login
+       div.login
+         input(type="submit", value="signup")
+       

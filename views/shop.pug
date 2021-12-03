@@ -1,0 +1,37 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    title #{pageTitle}
+    link(rel='stylesheet' href='/css/shop.css')
+nav.header
+    label.logo
+        a(href='/') Shopify
+    ul.navigation-bar
+        li
+            a(href='#') upload
+        li
+            a(href='/profile') profile
+
+h1.categories Categories
+
+div.wrapper
+    each val,index in categories
+        if activeClass[index]
+            div.item.active
+                a(href="/shop/" + val) #{val}
+        else
+            div.item
+                a(href="/shop/" + val) #{val}
+.row
+    .column
+        img(src='/collection/food/2.jpg' alt='Snow' style='width:100%')
+    .column
+        img(src='/collection/food/1.jpg' alt='Forest' style='width:100%')
+    .column
+        img(src='/collection/food/3.jpg' alt='Mountains' style='width:100%')
+    .column
+        img(src='/collection/food/4.jpg' alt='Mountains' style='width:100%')
+    .column
+        img(src='/collection/food/6.jpg' alt='Mountains' style='width:100%')
+    .column
+        img(src='/collection/food/5.jpg' alt='Mountains' style='width:100%')
